@@ -1,0 +1,7 @@
+name: Git commit history
+author: NisargShah1410
+description: 'Returns git commit history'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
