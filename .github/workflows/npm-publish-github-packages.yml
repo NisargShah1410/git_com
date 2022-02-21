@@ -1,0 +1,16 @@
+name: Commit date to master
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  date:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: setup git config
+        uses: nisargshah1410/git_com@v1
