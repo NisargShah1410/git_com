@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: get commit history
-        uses: nisargshah1410/git_com@v1.4
+        uses: nisargshah1410/git_com@v1.5
         with:
           github_handle: NisargShah1410
           repository: git_com
