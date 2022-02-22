@@ -9,6 +9,9 @@ inputs:
   github_mail:
     description: 'GitHub mail'
     required: true
+  repository:
+    description: 'Repository name'
+    required: true
 
 runs:
   using: 'node12'

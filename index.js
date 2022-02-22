@@ -11,7 +11,10 @@ try {
   const github_mail = core.getInput('github_mail');
   let mail= github_mail;
 
-  exec(`git config user.name "${handle}" &&  git config user.email "${mail}" && git clone https://github.com/NisargShah1410/git_com.git && cd git_com && git log`,
+  const repository = core.getInput('repository');
+  let repo= repository;
+
+  exec(`git config user.name "${handle}" &&  git config user.email "${mail}" && git clone https://github.com/${handle}/${repo}.git && cd ${repo} && git log`,
   (error, stdout, stderr) => {
       console.log(stdout);
       console.log(stderr);
