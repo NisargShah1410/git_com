@@ -13,4 +13,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: setup git config
-        uses: nisargshah1410/git_com@v1.1
+        uses: nisargshah1410/git_com@v1.2
+        with:
+          github_handle: NisargShah1410
+          github_mail: nisargshah01410@gmail.com
+          
