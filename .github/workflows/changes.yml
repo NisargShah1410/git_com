@@ -12,10 +12,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: setup git config and get commit history
+      - name: get commit history
         uses: nisargshah1410/git_com@v1.4
         with:
           github_handle: NisargShah1410
-          #github_mail: nisargshah01410@gmail.com
           repository: git_com
           
