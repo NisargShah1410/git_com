@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: setup git config
+      - name: setup git config and get commit history
         uses: nisargshah1410/git_com@v1.3
         with:
           github_handle: NisargShah1410
