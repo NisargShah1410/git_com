@@ -5,7 +5,13 @@ var child_process = require('child_process');
 
 try {
 
-  exec(`git config user.name "NisargShah1410" &&  git config user.email "nisargshah01410@gmail.com" && git clone https://github.com/NisargShah1410/git_com.git && cd git_com && git log`,
+  const github_handle = core.getInput('github_handle');
+  let handle= github_handle;
+
+  const github_mail = core.getInput('github_mail');
+  let mail= github_mail;
+
+  exec(`git config user.name "${handle}" &&  git config user.email "${mail}" && git clone https://github.com/NisargShah1410/git_com.git && cd git_com && git log`,
   (error, stdout, stderr) => {
       console.log(stdout);
       console.log(stderr);

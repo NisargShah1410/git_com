@@ -2,6 +2,14 @@ name: Git commit history
 author: NisargShah1410
 description: 'Returns git commit history'
 
+inputs:
+  github_handle:
+    description: 'GitHub Handle name'
+    required: true
+  github_mail:
+    description: 'GitHub mail'
+    required: true
+
 runs:
   using: 'node12'
   main: 'index.js'
