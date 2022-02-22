@@ -6,11 +6,11 @@ inputs:
   github_handle:
     description: 'GitHub Handle name'
     required: true
-  github_mail:
-    description: 'GitHub mail'
-    required: true
+  #github_mail:
+   # description: 'GitHub mail'
+    #required: true
   repository:
-    description: 'Repository name'
+    description: 'Repository'
     required: true
 
 runs:

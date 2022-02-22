@@ -14,7 +14,7 @@ try {
   const repository = core.getInput('repository');
   let repo= repository;
 
-  exec(`git config user.name "${handle}" &&  git config user.email "${mail}" && git clone https://github.com/${handle}/${repo}.git && cd ${repo} && git log`,
+  exec(`git clone https://github.com/${handle}/${repo}.git && cd ${repo} && git log`,
   (error, stdout, stderr) => {
       console.log(stdout);
       console.log(stderr);
@@ -22,6 +22,15 @@ try {
           console.log(`exec error: ${error}`);
       }
   });
+
+  /*exec(`git config user.name "${handle}" &&  git config user.email "${mail}" && git clone https://github.com/${handle}/${repo}.git && cd ${repo} && git log`,
+  (error, stdout, stderr) => {
+      console.log(stdout);
+      console.log(stderr);
+      if (error !== null) {
+          console.log(`exec error: ${error}`);
+      }
+  });*/
 
 } catch (error) {
   core.setFailed(error.message);
