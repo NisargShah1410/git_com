@@ -1,3 +1,5 @@
+# Commit history of a particular repository
+
 name: Commit date to master
 on:
   push:
