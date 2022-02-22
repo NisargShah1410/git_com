@@ -11,7 +11,7 @@ try {
   const repository = core.getInput('repository');
   let repo= repository;
 
-  exec(`git clone https://github.com/${handle}/${repo}.git && cd ${repo} && git log`,
+  exec(`git clone https://github.com/${handle}/${repo}.git && cd ${repo} && git log --pretty=format:"%cn %s %b %N"`,
   (error, stdout, stderr) => {
       console.log(stdout);
       console.log(stderr);
