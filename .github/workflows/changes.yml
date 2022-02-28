@@ -1,6 +1,6 @@
 # Commit history of a particular repository
 
-name: Commit date to master
+name: GraphQL
 on:
   push:
     branches: [ main ]
@@ -14,9 +14,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: get commit history
-        uses: nisargshah1410/git_com@v1.7
-        with:
-          github_handle: NisargShah1410
-          repository: git_com
+      - name: get pull request history
+        uses: nisargshah1410/graph_act@v1.1
           
