@@ -1,5 +1,5 @@
 
-name: Node.js Package
+name: Trigger and wait action test
 
 on:
   push:
@@ -13,4 +13,5 @@ jobs:
         with:
           owner: NisargShah1410
           repo: git_act
+          workflow_file_name: main.yml
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
