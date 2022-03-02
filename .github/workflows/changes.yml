@@ -3,9 +3,9 @@
 name: Commit date to master
 on:
   push:
-    branches: [ main ]
+    branches: [ main1 ]
   pull_request:
-    branches: [ main ]
+    branches: [ main1 ]
 jobs:
   commit_history:
     runs-on: ubuntu-latest
