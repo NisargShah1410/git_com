@@ -1,0 +1,16 @@
+
+name: Node.js Package
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: NisargShah1410
+          repo: git_act
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
