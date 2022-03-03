@@ -12,6 +12,6 @@ jobs:
       - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: NisargShah1410
-          repo: git_act
+          repo: graph_act
           workflow_file_name: pull_req.yml
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
